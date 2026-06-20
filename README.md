@@ -7,6 +7,7 @@ Stream Deck profiles for DCS Flight Panels:
 - OH-58D Kiowa Warrior
 
 [![Demo Video](pictures/kdpv.png)](https://youtu.be/sFP8s7s-6wk)
+Demo Video: https://youtu.be/sFP8s7s-6wk
 
 ## Installation and usage
 
