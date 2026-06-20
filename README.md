@@ -1,4 +1,4 @@
-# DCS Streamdesk Profiles
+# DCS Stream Deck Profiles
 
 Stream Deck profiles for DCS Flight Panels:
 
