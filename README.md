@@ -1,4 +1,4 @@
-# streamdesk_profiles
+# DCS Streamdesk Profiles
 
 Stream Deck profiles for DCS Flight Panels:
 
@@ -6,7 +6,7 @@ Stream Deck profiles for DCS Flight Panels:
 - Ka-50 III
 - OH-58D Kiowa Warrior
 
-[![Demo Video](images/kdpv.png)](https://youtu.be/sFP8s7s-6wk)
+[![Demo Video](pictures/kdpv.png)](https://youtu.be/sFP8s7s-6wk)
 
 ## Installation and usage
 

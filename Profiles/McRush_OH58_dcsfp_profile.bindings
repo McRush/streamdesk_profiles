@@ -1,0 +1,2833 @@
+#This file can be manually edited using any ASCII editor.
+#File created on 20.06.2026 0:00:00 20.06.2026 19:01:55#
+#
+#IMPORTANT INFO REGARDING the keyboard key AltGr (RAlt as named in DCS) or RMENU as named DCSFP
+#When you press AltGr DCSFP will register RMENU + LCONTROL. This is a bug which "just is". You need to modify that in the profile
+#by deleting the + LCONTROL part.
+#So for example AltGr + HOME pressed on the keyboard becomes RMENU + LCONTROL + HOME
+#Open text editor and delete the LCONTROL ==> RMENU + HOME
+#Supported panels :
+#   PZ55SwitchPanel
+#   PZ69RadioPanel
+#   PZ70MultiPanel
+#   BackLitPanel
+#   StreamDeckMini
+#   StreamDeck
+#   StreamDeckXL
+#   StreamDeckPlus
+
+#  ***Do not change the location nor content of the line below***
+Profile=49
+EmulationModesFlag=3
+UseGenericRadio=False
+
+Option1=False
+
+PanelType=StreamDeckMK2
+PanelInstanceID=\\?\hid#vid_0fd9&pid_0080#6&3763bcde&0&0000#{4d1e55b2-f16f-11cf-88cb-001111000030}
+BindingHash=dd7b562f657097f7b3674fa05ff71f02
+BeginPanelJSON
+{
+  "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.StreamDeckLayer, NonVisuals]], System.Private.CoreLib",
+  "$values": [
+    {
+      "$type": "NonVisuals.Panels.StreamDeck.StreamDeckLayer, NonVisuals",
+      "Name": "Home",
+      "StreamDeckButtons": {
+        "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 8,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSDecoder, NonVisuals",
+              "UseFormula": true,
+              "FormulaInstance": {
+                "$type": "DCS_BIOS.Serialized.DCSBIOSOutputFormula, DCS-BIOS",
+                "FormulaResult": 241.0,
+                "Formula": "HDG_DEG_MAG "
+              },
+              "DCSBIOSOutput": {
+                "$type": "DCS_BIOS.Serialized.DCSBIOSOutput, DCS-BIOS",
+                "ControlId": "HDG_DEG_MAG",
+                "Address": 1124,
+                "Mask": 511,
+                "Shiftvalue": 0,
+                "DCSBiosOutputType": 1,
+                "DCSBiosOutputComparison": 0,
+                "ControlDescription": "Magnetic Heading",
+                "MaxValue": 359,
+                "MaxLength": 0
+              },
+              "DCSBIOSConverters": {
+                "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals]], System.Private.CoreLib",
+                "$values": []
+              },
+              "TreatStringAsNumber": false,
+              "RawTextFont": "Consolas, 12pt",
+              "RawFontColor": "White",
+              "RawBackgroundColor": "Black",
+              "DecoderSourceType": 1,
+              "DecoderOutputType": 0,
+              "LimitDecimalPlaces": false,
+              "NumberFormatInfoFormula": null,
+              "FaceType": 4,
+              "ButtonTextTemplate": "{dcsbios}",
+              "TextFont": "Consolas, 12pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "UIntDcsBiosValue": 73,
+              "StringDcsBiosValue": "",
+              "StreamDeckButtonName": 8,
+              "OffsetX": 2,
+              "OffsetY": 22,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAFASURBVHhe7dbRbaNQAAVRl0dBlEMvboVO3gZCNKw95Dsyg3R+BmyJK7D8+DpGfqUx0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoHI9pGes4HesyJrtuN43luPg52/nHmJ+/n//DLM5jux9u5hjgOZ+uwbSdXNd90LcBjmWey/fgHzLQu32Er9nm13P7k7aOZXoddbO14zPHE3mzgc5Plg108tkDXbxi++vzM9qNB/r+Gdleo3N/HeSmA/k4R//vibrhQFfj/IxxfchnPm2g63Gu3OkJOm5Gj4v/Qj4QfyDfjsvv+XM0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjdk9xj+utibM/EeJxQAAAABJRU5ErkJggg=="
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 4
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 6,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSDecoder, NonVisuals",
+              "UseFormula": true,
+              "FormulaInstance": {
+                "$type": "DCS_BIOS.Serialized.DCSBIOSOutputFormula, DCS-BIOS",
+                "FormulaResult": 0.0,
+                "Formula": "CPLT_CYCLIC_LASER "
+              },
+              "DCSBIOSOutput": {
+                "$type": "DCS_BIOS.Serialized.DCSBIOSOutput, DCS-BIOS",
+                "ControlId": "CPLT_CYCLIC_LASER",
+                "Address": 35354,
+                "Mask": 32,
+                "Shiftvalue": 5,
+                "DCSBiosOutputType": 1,
+                "DCSBiosOutputComparison": 0,
+                "ControlDescription": "Fire Laser",
+                "MaxValue": 1,
+                "MaxLength": 0
+              },
+              "DCSBIOSConverters": {
+                "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals",
+                    "FaceTypeText": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+                      "FaceType": 1,
+                      "ButtonTextTemplate": "LAZE\r\nON",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Red",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAI8SURBVHhe7ZkBksIgDEV7PA/kcbyLV+lNuoElnVACH7udHZv5mXnraoGaZ8BKl21ZNtKHggAUBKAgAAUBKAjgC3q8thzvZ3tsxPP92y/F64Hb9KI6r4yzlte9WOW92vEv5lpBKfdV/qSEem98RlAlN4wgaZsiJffKhmQcr12P0r85pwoSsdXr/8N1grQynvK/9u9NM4/c3ZMQRVCVYElqtvyt3OZ4CEHO9MjTTMJN2gDPpYI68cmHeIJrBHkVMDXGTKVFEFRNL2Viakwt5refYtIGhTfN9BxwIb+7oI8v/BIl6alF/O6Csp/eNNHqOiQ37HPkmwX1YhdXBIwqIcuQ0Gk2U3HVeCqoE7OXEif5myBNdrSOaBvto1//o/h6QWSHggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIMBAkG5VmPB+GO4/PuWx2b4oY8xsm3wpvqDhloQcs23tr/NGREhBJakUvTucNmEVtKbHYxVFFKQJu3s8KsmI0PZPT0ZEQXl2HSvBsAtxnue+dgqGE1QqZLRLd9xFtIKaOxXhBJWEzgpKz6sqYgW1gqoqiiro7BqU21jJ4QQJmvC+jlhKwnYhbgQJWmXuN9u9aAXZWz426V2OhJXnCdIqehdRoQQlNGkvjuuTK0iwV+PhBCW8m4fetOsJshUXUhDJUBCAggAUBKAgAAUBKAhAQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUNGTZfgC1dAqjL0LSZQAAAABJRU5ErkJggg=="
+                      }
+                    },
+                    "FaceTypeImage": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeImage, NonVisuals",
+                      "FaceType": 2,
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "ImageFile": "",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "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"
+                      }
+                    },
+                    "FaceTypeDCSBIOSOverlay": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeDCSBIOSOverlay, NonVisuals",
+                      "FaceType": 8,
+                      "BackgroundBitmapPath": "",
+                      "ButtonTextTemplate": "",
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "UIntDcsBiosValue": 4294967295,
+                      "StringDcsBiosValue": "P?LKASD2!",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dBBAQAgDAAh+9dboJlArwAPCnBmZnkTFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBX7MXHpZCGwSPm20AAAAASUVORK5CYII="
+                      }
+                    },
+                    "ConverterOutputType": 1,
+                    "Comparator1": 0,
+                    "ReferenceValue1": 1.0,
+                    "Comparator2": 10,
+                    "ReferenceValue2": 0.0
+                  },
+                  {
+                    "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals",
+                    "FaceTypeText": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+                      "FaceType": 1,
+                      "ButtonTextTemplate": "LAZE",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGmSURBVHhe7daBbYMwFEXRjOeBGIddWIVNXGJMHi7XxkFVlaBn6UjtbUnCl037WFa0JowmGE0wmmA0wWgCMYxxjsuahuPPWobpeVVa8xhOf6e6ivcNcUwfprLmMYb96/89iBcHlO59nuL0vLj2wTsGVA73NgMaYprPcnMh3dEcx0C/V7Nef3zPbUBTHIr+byBeGVDeGdOwfJ2vrx4zsF5OQ7jJgMobzDfVu/33wz38/BYDOh6P9ZjVbnrn9L1OnkHv7PJrIL47INoBXa/Rs9NuMCB+fpwfjb6H+dcfsXy8GguPWX6P8wf5tw8oH6/mOrxOz9HafPmA1vnUjsm2u8qba1/z2ycPqLZeg8sDaOyEbYO9jlnPjitebxtQZfX+K3EdxN4B5ZttPkc0ofT99ue/uT5+QLaH0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjJY84g/POqNBSJu5KAAAAABJRU5ErkJggg=="
+                      }
+                    },
+                    "FaceTypeImage": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeImage, NonVisuals",
+                      "FaceType": 2,
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "ImageFile": "",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "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"
+                      }
+                    },
+                    "FaceTypeDCSBIOSOverlay": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeDCSBIOSOverlay, NonVisuals",
+                      "FaceType": 8,
+                      "BackgroundBitmapPath": "",
+                      "ButtonTextTemplate": "",
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "UIntDcsBiosValue": 4294967295,
+                      "StringDcsBiosValue": "P?LKASD2!",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dBBAQAgDAAh+9dboJlArwAPCnBmZnkTFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBX7MXHpZCGwSPm20AAAAASUVORK5CYII="
+                      }
+                    },
+                    "ConverterOutputType": 1,
+                    "Comparator1": 0,
+                    "ReferenceValue1": 0.0,
+                    "Comparator2": 10,
+                    "ReferenceValue2": 0.0
+                  }
+                ]
+              },
+              "TreatStringAsNumber": false,
+              "RawTextFont": "Consolas, 12pt",
+              "RawFontColor": "Blue",
+              "RawBackgroundColor": "Red",
+              "DecoderSourceType": 1,
+              "DecoderOutputType": 1,
+              "LimitDecimalPlaces": false,
+              "NumberFormatInfoFormula": null,
+              "FaceType": 4,
+              "ButtonTextTemplate": "",
+              "TextFont": "Consolas, 12pt",
+              "FontColor": "Blue",
+              "BackgroundColor": "Red",
+              "UIntDcsBiosValue": 4294967295,
+              "StringDcsBiosValue": "",
+              "StreamDeckButtonName": 6,
+              "OffsetX": 4,
+              "OffsetY": 2,
+              "RawBitmap": null
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 6,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "CPLT_CYCLIC_LASER",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "CPLT_CYCLIC_LASER",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 1,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 1,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "CPLT_CYCLIC_LASER",
+                    "Delay": 0,
+                    "ControlDescription": "Fire Laser",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_LASER",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_LASER",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 1,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_LASER",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 4
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 7,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "LAZE\r\nOFF",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 7,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwAAADsABataJCQAAAiNJREFUeF7t2YFxozAARNGUR0GUQy+0Qic6ApIXhS8h4jlPbK1m3sxlA7a1J5EEvtYRrApDEwxNMDTB0ARDEwxNMDTB0ARDEwxzwxSWsI555O+XjPP3WdtYpuHymOLI3ncI0/ZhCmOZwnB8/edhmPtlQdvclznM3yeXPnhDQXm5H1PQGLZ+1skN24yWMA10XMl+/vk9U0FzGLP8v8Ew95uC4sqYx/Xf8fziNgP76VTChxSUTzBOqnX5H8s9ff8jCjpvj32blSZ9cPleF9egO6u8DYa5uwXRCmh6jZaV9gEF8fXjemu0XczffovF7VUZuM3ie1xfyN+9oLi9quP0Oi1bK3nzgvZ+Stskra58cvVzfvrLBZXGo7hYQGUlpAX22GYtKy57vVRQYbT+KtEOw1xrQXGy1euIGtq+Tj/+q+PPF9Q3DE0wNMHQBEMTDE0wNMHQBEMTDE0wNMHQBEMAN8IKfxjW/wA936a4e/yLYZir3pJ4fsJvXpBWTvEJ548bafuE2x8U3j3+xTB8SP+7fI8nlZRPrquC9t1V/vCpwOON+I4KiiukdpcO7iKm0nDAfe27x78YhtH1PebOC3pmBfW0xXwNKksF8E8xfs7VVUHHRz75I+PS70e9FbRKqwgHXJ+6K2gDDw952/VaUL8wNMHQBEMTDE0wNMHQBEMTDE0wNMHQBEMTDE0wNMHQBEMTDE0wNMHQBEMTDE0wNMHQBEPbfIV/PxV5DIp0e8IAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 7,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "CPLT_CYCLIC_LASER",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "CPLT_CYCLIC_LASER",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 1,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "CPLT_CYCLIC_LASER",
+                    "Delay": 0,
+                    "ControlDescription": "Fire Laser",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_LASER",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_LASER",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_LASER",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 12,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "PNT\r\nTRK",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 12,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAjVJREFUeF7t2e2NozAchHHKoyDKSS+0QiecCZj52zwmK+42nJKx9PvA8LLyiJDF6dKY7RSGJhiaYGiCoQmGJhiaYGiCoQmGJhgG/fyYZh7TY+6r4/v94Gl+9OW+rhvmcdk1Dtv2ybWLMc5DcZ23wjB4NYmyCBWUxl5E9skFHe6WMLmwLxc0Tc+TqruoLqiWr3lrITUMg1ZBi23CYUK5oHGgMlxQKKibh7WNMNmvKihPJo0w4VhQ1z/Sh2w5td/2f3JBzVFOpigobZd30ZcVlEuI6oLKu+jrnkFHh4KK810QFJSsn7OUuSAuKF9jHF0QF5Rsd9FzuCAoKD9/lvFZBX09DE0wNMHQBEMTDE0wNMHQBEMTDE0wNMHQBMNdfAlvj/jzTngprcbxBTYcDy+w+99uvty+BYa7f1nQMrSAXx1flZBXBW4uZ4Fh01oY/aycbROulkf2Cae95VIGFLStY/90ieWXYdh0tSCt9bz6tXXbPhR5Gwybfrug19d/Owybrha0nnfMY0Ht1chbYdj044Jw0MemOv7+h3INw6arBR2/varjwx3UPvYWGDZd+Yidf2WrID2nls36uNtg2HTtGXQ28VhQ2D79G2+FYdO1gpL1xGN+KCjJ/welPf/BVz2GTZcLSnJH5V0EBS2ahb4dhk1/UxDfGY2CktzRzSVhaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGNpTN/8BzhoBxsBgCRUAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 12,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "CPLT_CYCLIC_POINT_TRACK",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                      "Description": "switch to previous or next state",
+                      "Interface": 0,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                    "Delay": 0,
+                    "ControlDescription": "Point Track",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 12,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": false,
+              "Description": "CPLT_CYCLIC_POINT_TRACK",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                      "Description": "Toggle switch state",
+                      "Interface": 2,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": "TOGGLE",
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                    "Delay": 0,
+                    "ControlDescription": "Point Track",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "CPLT_CYCLIC_POINT_TRACK",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": false,
+              "IsSequenced": false
+            },
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 15,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "KEY\r\nPAD",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "240, 233, 238",
+              "BackgroundColor": "70, 85, 79",
+              "StreamDeckButtonName": 15,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAn1JREFUeF7tmTFSwzAQRTkdLRWHoMpMTpGC4RQMOQWTHCJFrkDDcANhW15HtrT7ZWPLIfnFa+RIzj5pN5H08Pj85IgOBQEoCEBBAAoCUBCAggAUBKAgAAUBMgRt3Pvp2/2c9u5l8Ozl4+x+vuJnu8+qrW5PcnS7Yf/P167vkJzPLMl0QW9H/8UT4nIFdWNX7Ye3/hieV3eI+pRloiD7i3tBZ/e+jZ9FbPfuXI9liE7LK8MEQTLruoBRgiokjc4fm0u7iFsptYTRgiQYa1bHCrqsSOmDJ6EU4wS1dac30wnMGpRIpQapafWKyXxPCfIFoQADJgmq6PdbrzCHTFpBqC6MT7EWqTsVaxbmkNE1SGbZWv6TBXWr9TpWT81oQWHKabN854Jqhr86fSiopqsXcTCShmms4G9JUEW3TxoEdGeC7hsKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABmCZAOZILGB7SEnkBXaAdtlwzvkOjasfxPUoJ/7NLv609EdlNOAGl2QZ+2D+3xBUYCBuGTw/lCtDtBLSIvUnoXi/tnFYYhxw9qmVxNce7iWWg1YnvbuMiwmyB+aSbs+hiXInIBCzJNi0TVQG1jQLqthmC62IHmH9nx5ZijSIL2kTblrv2lB9rXPUJyM02+/HUHZhVLqhk4o1hRk3JyUYn5BwZ9Dlag2pQV1tyPgqntJZhfkg9JSIv5VSguS1LLGKsPMgloBxmdlVUiaeUEiI0arc6WYV1CbXub2QFKwTRtN0NpbDCFD0H1DQQAKAlAQgIIAFASgIAAFASgIQEEACgJQEICCABQEoCAABQEoCEBBAAoCUBCAggAUBKAgAAWZPLlfaAATEdC9biQAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeLayer, NonVisuals",
+              "NavigationType": 0,
+              "TargetLayer": "KEYPAD",
+              "RemoteStreamdeckBindingHash": "",
+              "RemoteStreamdeckTargetLayer": "",
+              "ActionType": 16,
+              "StreamDeckButtonName": 15,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0
+            },
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 16,
+            "FaceType": 1
+          }
+        ]
+      },
+      "StreamDeckPushRotaries": {
+        "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.StreamDeckPushRotary, NonVisuals]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckPushRotary, NonVisuals",
+            "StreamDeckPushRotaryName": 0,
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": false,
+            "ActionType": 0
+          }
+        ]
+      }
+    },
+    {
+      "$type": "NonVisuals.Panels.StreamDeck.StreamDeckLayer, NonVisuals",
+      "Name": "KEYPAD",
+      "StreamDeckButtons": {
+        "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 2,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "1",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 2,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAPZJREFUeF7t2MFtg1AUBVGXR0GUQy9uxZ38mMjy2MrEb51ovnQWjBCLK8SCy/2sfKQx0BhoDDQGGgONgcZAY6Ax0BhoDDTOtmPd1uPcjrXZPf+Dxg/2dX3s8jwNdNrW8Xxlzk12rhvosvbna3Nbx3a2l8Ea6O785rwN0UCDBho00KCBBg00aKBBAw0aaNBAgwYaNNC7198b07nu/oy/SeNPDZRfaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw05ttlfQFAnQygIkGHfQAAAABJRU5ErkJggg=="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 2,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "MFK_1",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_1",
+                      "Description": "switch to previous or next state",
+                      "Interface": 0,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_1",
+                    "Delay": 0,
+                    "ControlDescription": "Num 1",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_1",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_1",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_1",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 2,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": false,
+              "Description": "MFK_1",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_1",
+                      "Description": "Toggle switch state",
+                      "Interface": 2,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": "TOGGLE",
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_1",
+                    "Delay": 0,
+                    "ControlDescription": "Num 1",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_1",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_1",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_1",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": false,
+              "IsSequenced": false
+            },
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 3,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "2",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 3,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAStJREFUeF7t19GNgkAYAGHLoyDKsRdasRNOLhcHdeT0UZhNvsQM8PJnWfV0XXM2aQw0BhoDjYHGQGOgMdAYaAw0BhoDjRuG+XyZH9ZlPg927y5oVMPzZO7XNOpzX07js3H6m8J1v5yH1bX7HTWNq2f2QaMap1ev0jjfxre/XaTxY7cNdjnPg1z/Yho/1oA2rc6hXjGxOsAPfUi71QG9v9drofFNq+FcP416z9fT+Ib1cPol/eAww1lo3HCo4Sw0vnC44Sw0ikMOZ6Hxyb//5NdrX1/3Gp80oLyiMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdCYX6f5BxGkHJk07HhHAAAAAElFTkSuQmCC"
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 3,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "MFK_2",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_2",
+                      "Description": "switch to previous or next state",
+                      "Interface": 0,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_2",
+                    "Delay": 0,
+                    "ControlDescription": "Num 2",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_2",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_2",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_2",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 3,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": false,
+              "Description": "MFK_2",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_2",
+                      "Description": "Toggle switch state",
+                      "Interface": 2,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": "TOGGLE",
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_2",
+                    "Delay": 0,
+                    "ControlDescription": "Num 2",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_2",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_2",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_2",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": false,
+              "IsSequenced": false
+            },
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 4,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "3",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 4,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAATdJREFUeF7t2MFtg0AUANGUR0GUQy9uxZ0QO4kzRAyJyI3VrPQuA7587Rrst8da8yuNgcZAY6Ax0BhoDDQGGgONgcZAY6Dx0HxbZd3XZfL7B6BRTOty/5rH0brN8rnL0yg+B3Sb99e2u8quX5zGkza7a7xdpPGkBvSHeX2dso7YDsMZcPc8aTw2LY+H+n4NuHNeNB47GNDHage5afuCdF/WSe65MI3nbV6GBjtuGv+BL+v7Msn1y9L4D8M+6jWe933Ebuts169L4ynb32KDHa8njXv+P8ePNeBwnjTu/TKgQQfzojHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGjMh7f1HbghDtX9QsRcAAAAAElFTkSuQmCC"
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 4,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "MFK_3",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_3",
+                      "Description": "switch to previous or next state",
+                      "Interface": 0,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_3",
+                    "Delay": 0,
+                    "ControlDescription": "Num 3",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_3",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_3",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_3",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 4,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": false,
+              "Description": "MFK_3",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_3",
+                      "Description": "Toggle switch state",
+                      "Interface": 2,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": "TOGGLE",
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_3",
+                    "Delay": 0,
+                    "ControlDescription": "Num 3",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_3",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_3",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_3",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": false,
+              "IsSequenced": false
+            },
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 7,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "4",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 7,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAQZJREFUeF7t1Mttg0AABmGXR0GUQy9uxZ1sSPwYEo2DfUyYlb4DY06/WJ/WM/IrjYHGQGOgMdAYaAw0BhoDjYHGQGOg8UXTWC6Dc57lnT9P40umb+usp4E25vNtlcu43HdqoLt5POZZpvHYqoGu+HiWMW2fG2i1uVrLdG0N9MDVOs/0Brp5NkQDfWKFMf/4rYGeXK27ww+0N8DBB+Lreev8n7E0bjSQxbf0J72jgXY00I4GOjaNgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZ8OY0PJt47mUKjLw8AAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 8,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "5",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 8,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAARRJREFUeF7t18ttg1AUAFGXR0GUQy+04k4ICYkmnwmI7CBzpbMZm80VPOPHOkt2aQw0BhoDjYHGQGOgMdAYaAw0BhoDjWJYpudyOM9pkGsvTaNoQQdY0Dza57elUbSgAy3oQAs60IIOsCCbG/56fdAo9he0zXOZBrv20jSeMnzZ3LyM8p0L03jeOL8v6HZnlMY/GNd7Z5ubnUcazxum9QTapjtI8IR1Bn3Do/U6//fP6qdH6Le56Qukxp92FnTzN2uNgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY6Ax0BhoDDQGGgONgcZAY948lheL0h7GMT1j0gAAAABJRU5ErkJggg=="
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 9,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "6",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 9,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAU9JREFUeF7t19FtgzAAANGOx0CMwy5ZJZvQtGp6yLnS/MY5S+/nTD5iGQMft7HnlMZAY6Ax0BhoDDQGGgONgcZAY6Ax0PiU9bI/jsuq174wjad0Ye7jvRdo2bfrz0J8jfkWw2hUy+/qXPdt8WsmpFGs+/3Ouqw2Py2Nj+4Hz3XbF5ufl8YHvwfze5w7RxoHHM7XbWE3DeN7Tn//0jQOhqfX2ZjvFtQ4+P/xzhNuup2kcTDcYnrN4ZyaaxdpHDy3QJxNl321+dek8cEzu4Pb7A0XiN3x11v04Zya61VAozge1OMOOc5N9xmi0S3b7e+fjwk/QzSe0vfEed+wNQYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA42BxkBjoDHQGGgMNAYaA4359rF/ArbwReOIao2lAAAAAElFTkSuQmCC"
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 10,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "HOME",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "240, 233, 238",
+              "BackgroundColor": "70, 85, 79",
+              "StreamDeckButtonName": 10,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAflJREFUeF7t1kGOgjAYhuE5nVtXHsKVyZzChfEURk9h9BAuuMJszNyg01J+KFh41ZFkcL7FmxhaQJ6U6sdsMXeqPwFBAoIEBAkIEhAkIEhAkIAgAUEMtD2776+rO20zY4uV212ufvzs1t2xz4Mr/Hnh3Lrjpj3Ht9wXcexycMvO2PpYndcas3v2lLnObxoFqH7oXJ0HaOYWbvfZHJ8tNu6UPWfqQMnKaZ/TPHCxX9XHy1VyObuTv056PN7XHy/Hc0CZVTtCLwey1yI/35A68z3AOqykBCIcD2DxeinGpIH4y8cHbl4nA1qWK8+OB8j4eTJAw9mXrVZIZjO2bM+J4NXDlisnfi5fs3DPajX1A/U0cO9nei2Q7T+PAlXzyzEPs/Moth/F+RMAuu8Ve3IF2fx6g29ewTg//YXr3nPcxgEa+PLtPagLWl0v2azfDMgAeubbCqkB7l1xbwTU7FnpQ/my/48efSVDUwfy2SrKlmI8vKmH7J49Ja/nKxoFqKxeSU0316iAWv+gu93c/68B/fMEBAkIEhAkIEhAkIAgAUECggQECQgSECQgSECQgCABQQKCBAQJCBIQJCBIQJCAIAFBAoIEBAkIEhAkIEhAkIAgAUECggQECQgSECQgSECQgCABQQKCBAQJCBIQJCBIQJCAIAFBAhps7n4Ajzp6RmLQ5JUAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeLayer, NonVisuals",
+              "NavigationType": 0,
+              "TargetLayer": "Home",
+              "RemoteStreamdeckBindingHash": "",
+              "RemoteStreamdeckTargetLayer": "",
+              "ActionType": 16,
+              "StreamDeckButtonName": 10,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0
+            },
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 16,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 12,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "7",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 12,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAARlJREFUeF7t2Mtpw0AABmGX54JUjntxK+5kkw04E8z4IchF0ix8l1nQYflPOn2fkZc0BhoDjYHGQGOgMdAYaAw0BhoDjYHGB8u4jhXndhln/c4maXzQA/2D87jc7u9zlvvN0rject/YdSx2v10aV9rteiaN6+x3PZPGFXa9nknj537XcxuXs9xvn8YPsZ5xXeR+FzR+Zv/rmTR+4BDrmTS+d4z1TBrfOMx6Jo2vHWc9k8YXDrWeSeNzx1rPpPGJP789jrGeSWOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdAYaAw0BhoDjYHGQGOgMdCYH6fxBTn46cne5lZlAAAAAElFTkSuQmCC"
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 13,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "8",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 13,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAWZJREFUeF7t18FxgzAYBWHKoyDKoRe3QicyZGyvBAvxFflp5ruskkP+kWVlWFeJSxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaL4xlXoqspcyj/fztaVSjT6Zdj0l/98Y0Ho3zekZeS4YwPV5763pM7d7NaTz4nJ5lLqPsD8NU3jNa5lH2b0vjwf8D4m76yQEN1WdIB/DZ7+6y1qjqe2a9acokvbP7Z6PxXDulajGwzmi8wGW8Xx2eno1G1byD3pd1/fW/rZ99B7UXzW6/fV3/4DuoGsAX76DOTpHGne/+eL7pz4Z4Sxp3qhN0OqBvTtktaTxoLmgZUsdvIY2ivYjPVmf/Zmw0ntt/rb9XXx+rmsaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMaAxoDGgMb4M5QnyKh2CRPU/6wAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 14,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "9",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 14,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAVhJREFUeF7t2MkNgzAABdGUR0GUQy+0QicO2RiWAZEj5lt6lyE52DIO5DGOEoc0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNB5oSjeUzehb+2wVNLq2/y7Hzhi60tj3rk3jVtOVaeOsFqKZbamha5bfuz6NG9Pm2dklLFJfWrl+YRpX2nHa3+nvnTWzHVbZeaRxaZr8ULpGrr9xeFd2m2lcOrk7ptuwb/X6RWlc4RY7mvyNF2g2+XFsb6HVs9EdF2jvAVHHPRfoY/7Mw/gc3r9ddr9D+pTfDjv6pbskjf9j+9T2uqHxP/U+JL5oPGl5cFf4HvaicWv+siojf3foAlV3IBuNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGNAY0BjQGN8fYoTwpUSo1hY3dPAAAAAElFTkSuQmCC"
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 15,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "0",
+              "TextFont": "Consolas, 20.25pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 15,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwQAADsEBuJFr7QAAAWxJREFUeF7t18GtgzAUBdGUR0GUQy+0Qif+4Svh2mZA2QJj6WyGZGM9O+T1XkWnMCowKjAqMCowKjAqMCowKjAqMCowKjCeGqal7NY84mdvAOOBscyf/eA1lxG/d2kYwVAyOEuZhurZWG3bMpWh+d7lYdzbNqHbnN3z9bTB8+vC2Kmm5/Cu+eUzl4Sxk7vncDrqY3avuwhja5jeB2tddLzqu+m7Do7hNWFsbdPRTUY/NacbeVkYW7sN6qbme+e4QfWUrKvbiMduULMpn0W/VNvnnnZJN2/Qx9Ox/QW518sixs5v7zg5iY97D6r/oB5MUPWL9sA36dXJMat/7u81PSuMjC7ret3vj+oK46l6YL7rZseqhlGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVH/XuUPaCCAvfwSGpQAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 1,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "KYBD",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 1,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAg1JREFUeF7t11uSgjAUhGGXx4JYDntxK+4kg0joA/wnoFg1PnSqvgc7yKUTrJnbOIo1YWiCoQmGJhiaYGiCoQmGJhiaYGiCYdCV4VFKeQyl28x104Tmls/3fnVctD+mL/dXsh9wnj47GO7vSzAMkoLqna7y+dhx3Ptw7KKWcS/9LkvG5rppQfPg616CYUAF0YPOuqFMHcGK1odbP8R8rt1uqdd4lKFT/jrH/roqbn38F2AYbAuquyS/kfoaPYZOeS0uKyJ9nc4VpLnn9P5cF2AYrAuqD9/eytvVb5WaFJTsxFZBrd17AYZBKGheotXOyNTlfD5483u1TBjprkoKWs6VzX8Ew6Cu/jzeWJ3a0WscPRSPbam/W1DYQaff8brlp6/A/CR5xUJx8bu/XdD4uXZ06jVbdl/rhrOCRvDD3ixIN/dPv0Hx8ziO/+b4TkFxMfKCdF/nFu80DINtQU91Kx/9zXGloHqN55RyLkjHtq/1EQwDKmi0/L60buiNgrKxKa6+RTyOFuwjGAZJQaPl/6q0gCsF8cNmBR2/7h/D0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0Ca38gdw6elzmek+lQAAAABJRU5ErkJggg=="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 1,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                      "Description": "set the switch position",
+                      "Interface": 1,
+                      "MaxValue": 2,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                    "Delay": 0,
+                    "ControlDescription": "Channel Select Switch Left/Right",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                          "Description": "set the switch position",
+                          "Interface": 1,
+                          "MaxValue": 2,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 1,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": false,
+              "Description": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                      "Description": "set the switch position",
+                      "Interface": 1,
+                      "MaxValue": 2,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 1,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                    "Delay": 0,
+                    "ControlDescription": "Channel Select Switch Left/Right",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_COLLECTIVE_CHANNEL_SEL_LR",
+                          "Description": "set the switch position",
+                          "Interface": 1,
+                          "MaxValue": 2,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 1,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": false,
+              "IsSequenced": false
+            },
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 6,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "ENTR",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 6,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOwgAADsIBFShKgAAAAbdJREFUeF7t1mGOgjAURWGXx4JYDnvpVthJpyjl8vBITG3/TG6TLxPPaJGnoo+yst3CaILRBKMJRhOMJhhNMJpgNMFogjGYljV/XmteJrpv7C9zTtu/0rzfnvLt1sdKea57TEvZmRYdrwuMQduAyjoGUY0c0GuluR6rG4xBPelvDl7vu67b3+ureh3QVR3YaSBXdUCXPebnxmWtS55OvQOMQcuA0kzDGDegY++7x7bBGLQNqL6q5yf8zwfEKz6hMMz9ZNZl2v8/akCna9nHvZthDJoHVG7Hd1HHAdHqf/3ZYAyuJ33n7b7hXTRuQN88t0YYg58GVE/6+eqO+YjVbzB9lLvCGPw2oGI/A/5mO2sbkC7QQ34sYgx+HlA98ZQGDUjH/bx3M4zBcXBc/Ev6bZjHL7myBgxIj+3+LsIYdBnQ8TEoa8iACl2Men6bYTTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjCYYTTCaYLSnR/4DvnH10AVtmCAAAAAASUVORK5CYII="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 6,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "MFK_ENTER",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_ENTER",
+                      "Description": "switch to previous or next state",
+                      "Interface": 0,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_ENTER",
+                    "Delay": 0,
+                    "ControlDescription": "Enter",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_ENTER",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_ENTER",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_ENTER",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": false
+            },
+            "ActionForRelease": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 6,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": false,
+              "Description": "MFK_ENTER",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "MFK_ENTER",
+                      "Description": "Toggle switch state",
+                      "Interface": 2,
+                      "MaxValue": 0,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": "TOGGLE",
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "MFK_ENTER",
+                    "Delay": 0,
+                    "ControlDescription": "Enter",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_ENTER",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_ENTER",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 1,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "MFK_ENTER",
+                          "Description": "Toggle switch state",
+                          "Interface": 2,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": "TOGGLE",
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": false,
+              "IsSequenced": false
+            },
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 1
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 11,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSDecoder, NonVisuals",
+              "UseFormula": true,
+              "FormulaInstance": {
+                "$type": "DCS_BIOS.Serialized.DCSBIOSOutputFormula, DCS-BIOS",
+                "FormulaResult": 6.0,
+                "Formula": "PLT_CSC_TRANSMIT_SELECTOR-1"
+              },
+              "DCSBIOSOutput": {
+                "$type": "DCS_BIOS.Serialized.DCSBIOSOutput, DCS-BIOS",
+                "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                "Address": 35378,
+                "Mask": 7,
+                "Shiftvalue": 0,
+                "DCSBiosOutputType": 1,
+                "DCSBiosOutputComparison": 0,
+                "ControlDescription": "Transmit Selector Switch",
+                "MaxValue": 7,
+                "MaxLength": 0
+              },
+              "DCSBIOSConverters": {
+                "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals",
+                    "FaceTypeText": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+                      "FaceType": 1,
+                      "ButtonTextTemplate": "TSEL\r\nPVT",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAHtSURBVHhe7dnZcYQwEIThDY+ACIdcNpXNBHNY20j8IyiXL1Cr6ntpDqOxhlrgMY3RqjA0wdAEQxMMTTA0yYP+OZ4Yr3Ho8uMe3TClxXgNY7fd51P9bzzHvti/G9YzP/s8/yV58JUCVY+BIl26QKV1MrBikvfKCVZVWKDKOQvXLlBaDs+et4O2ClRbQYG2CjRJE1jH8cTTosMBLXn5Aq366faaj9fQwX7NFkiyFdX8TTrUjalO5UpygZL14HlmWd5UgeaL53uNV9AiXXw4vvGXdDR+uHAYvp35b0cTiC78VgUyDk0wNMHQBEMTDE0wNMHQBEMTDE0wNMHQpAz0mmI3yifz9NRZ+6KRXuov+1TOnY39A+sfKoOjSWyf7NN76HhC+bucOxVo9x5nM7nNNi2i7b5JOiaa8NH2f6EMogLNYMXU2ixrr2LbooUCVdosby9yqwKlyUwDX8KXhTgz+SsXKBwwGWqzw/aa3axAcavs22xtr6MvF1cuEN6DYnmbnT1HQwXK2uyzvaJv89JSgVKbTcf16wlOfBhsqkDF965TxzdWoHebTeO4vWaXLJAVMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDWzzGDybnNQPySvzMAAAAAElFTkSuQmCC"
+                      }
+                    },
+                    "FaceTypeImage": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeImage, NonVisuals",
+                      "FaceType": 2,
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "ImageFile": "",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "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"
+                      }
+                    },
+                    "FaceTypeDCSBIOSOverlay": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeDCSBIOSOverlay, NonVisuals",
+                      "FaceType": 8,
+                      "BackgroundBitmapPath": "",
+                      "ButtonTextTemplate": "",
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "UIntDcsBiosValue": 4294967295,
+                      "StringDcsBiosValue": "P?LKASD2!",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dBBAQAgDAAh+9dboJlArwAPCnBmZnkTFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBX7MXHpZCGwSPm20AAAAASUVORK5CYII="
+                      }
+                    },
+                    "ConverterOutputType": 1,
+                    "Comparator1": 0,
+                    "ReferenceValue1": -1.0,
+                    "Comparator2": 10,
+                    "ReferenceValue2": 0.0
+                  },
+                  {
+                    "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals",
+                    "FaceTypeText": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+                      "FaceType": 1,
+                      "ButtonTextTemplate": "TSEL\r\nICS",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH4SURBVHhe7dnrlYIwGIRhy6MgyqEXWrETRDEZkn3DbZdFZHLO82dEV2Y/OUpu/epsEoYmGJpgaIKhCYYmaVC33YJ175oqfd6tavo0W/emq8bHvE3/jbars+OrZnjltk7zf5IGWwqafA6UdOqCcsPJwMQEcXIKU1UsaOI1M+cuKIxDW/Pj4FoFTU1QwbUK6oUTGNb8iYehwwUfydMXNKj7y2u67k0Fx122IEkm6vIX6aKqCz3lk+SCguHJzzNL8ksV9HzzfK3xBL2EN19cf/hNurR2Lg7DaMl/u3QCpTf+VQUZhyYYmmBogqEJhiYYmmBogqEJhiYYmmBokge6TVFaxR+H9Cu0tNuxYqPxYHmwpaDp5/D9oML6vJIwjJbc7tAJw3H9g0lBGzYaD4ZhNFvQ2n2x0OaKjcaDYRjNFRRuZvFtV7Bho/FgGEZzBWkg+HGS3iH8+KIwjPYoaLB8o/FgGEb7FSTJRH3bRXr1NaiovE10MAyjuYL05fDnbsRqGkd+/BgYRrMFJV8S4bj+BcYT8Zw4npDTTNCGb9L0s2G08oIm1+dfgzYU9BY/baNF01Aq6TcX+h1haIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGJpgaIKhCYYmGNrLrXsAjbdNIZ3YMKgAAAAASUVORK5CYII="
+                      }
+                    },
+                    "FaceTypeImage": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeImage, NonVisuals",
+                      "FaceType": 2,
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "ImageFile": "",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAABgWlDQ1BzUkdCIElFQzYxOTY2LTIuMQAAKM+VkbtLA0EQh78YRYkJERS0sAgSrYxohKCNRYJGQS3iCb6a5PIS8jjuIiK2gm1AQbTxVehfoK1gLQiKIoiVhbWijco5lwQiQgp32Zlvf7sz7MxCnZJRs0Z9P2RzBT0SDnrm5hc8jc/U046LFhxR1dCmZsYUao6PO2yWv/FZufjfaI4nDBVsTcIjqqYXhMeFJ1cLmsXbwm1qOhoXPhXu1eWBwreWHivzi8WpMn9ZrCuRkNTWIuxJ/eLYL1bTelZYKsebzayolfdYlTgTudkZ8V2yOjGIECaIhwlGCRFggGGxAXz46ZMdNeL7S/HT5CVWFauxhs4yKdIU6BV1RbInxCdFT8jMsGb1/29fjeSgv5zdGYSGJ9N864bGLfgumubnoWl+H4H9ES5y1fj8AQy9i16sat59cG/A2WVVi+3A+SZ0PGhRPVqS7LLqkkl4PQHXPLReg2Ox3LPKOcf3oKzLV13B7h70yH330g8hBWfG1EZ8AwAAAAlwSFlzAAAuIgAALiIBquLdkgAABoNJREFUeF7tnNtLVVkcxxuYeZineZh5n8f5IzIShTSFtLK8gCMYvdjNJKyJFNMaUAlFx8EMlSKZtFSKkqBSKiom0bw8pKJZIN2oJLtq6pr9/Z31W65jW3fnHNehOa0PfDl7/dY6t+/Ze11+a+sqRgjxs6O/HA06mnX0rfHe0R1Hfzj6QdriwwlEO3rqyOKj19GvbM4vjp4havHjuqPvYFAtFS1u/A6Dhn3HFhcaYdC879jiQh8MsizNmDVoeaxBHliDPLAGeWAN8sAa5IFZgwYHB0VXV5efXr58SXVv3rxRsVevXlEMPHz4kGLXr2Om78/IyIh6Duvx48ey1ghmDTpy5IhYvXq1n/r6+qju0aNHKgYjmXPnzlEsNjZWRhaoq6tTz2Fdu3ZN1hohPAatWbNGJCYmktiMUAyKiooSGzduJN28eVPWGiE8Bu3fv19GFgjFoMzMTBkxTngM2rdvn3j37h2JCcWgjIwM9Xrz80aXkuHtg3BpMCvVB719+1bWGsEa5EF4DNq5cycZAjGhGLR161b1enNzc7LWCF9vJx0TEyNmZ2dJTMR20sEYxEpOTpY1CwZFR0eLnJwc0p072Igwxv/TIF1XrlyRtUYwa9CtW7foC7stGyYnJ6kOevZsYVPl/v37Kg5duHBB1ghx7949vzrowYMHstYIZg2KAKxBHliDPLAGeWAN8sCcQR8+fBClpaUkPWdz+/ZtilVWVsrIAgMDA+LgwYMiKSmJFridnZ2yxsf58+fVa+p6/vy5bLHimDMIaySeqyQkJKg1U3NzM8Xi4+OpzGAIX7t2rXoOq729XbYQ4ujRo5/VQ8hCGiI8BkEtLS0UdzMIKYtdu3ZRHAtaTAjXrVun2r1/j1t3hGhsbBQ7duxQr7llyxZa5xlMu4bPID6L3AzCF+R2p06dohgmlxzTs4ZYnHK8tbVVRo0RPoMgnEVuBmGpwW1u3LhBMX0p0tbWRjEQkQbt3buXHnEWNTQ00LFuEM4QboulBsBlxbETJ05QDESkQZcvX6YcDo6x+MSjblBvb69q293dTTGMTBw7ffo0xUBEGoThGiZxGdINGh8fV/FLly5RTL/s8FwmYg2amZmhUYdjukEfP36kLSHEMf958uSJKC8vV231FXvEGgQ6OjpUTDcInDx5UtXpQv+l71xEtEHT09MiJSWFYosNwsy7qKhIPQfKysryyxWBiDEIX2RsbIz0+vVrGRX0hRFzS3Qh/zw0NCQuXrwoenp61ARRB2cTv66+p28IcwZFCNYgD6xBHliDPDBnEDpcrKdevHhh+gYDkwRuEEYWpCJ0YQKoc/fuXRrGeTjevn27ePrU/4+Jzpw5o57PoB3KNTU1MuLLE3E7PfFWWFhIMSTMGIyQ3BafCck3zMwxogZJcAbxF2dhFsyMjo5STmdxG8x/MA9isL7iOgZbyijr2UYM99wuPT1dfPr0ieIHDhygWElJCZUBDOK2uvLz8/22sAMgNIOqq6tpJa5v//ISAdlB/OLHjh1T7XFPIROMQdDVq1cp7mUQkm4FBQWqHOQObGgGud0fyGuqQ4cOURnrLG5fVlZGMRCsQXwWeRmErABm58hvo7x7927ZKiBCMygvL09UVVUpo/CBuO748eMUA2lpaRTDQpQJxiDc64hHnEVfYhA4fPgwlfHDBTFYrEwfBJMApv4c4xw02LNnD8Wys7NlJDiD+HLFWYQbInDsZVBFRYWKcf8VAKEZhDMCIw73LfgAXKePRJs2baIYOksmGIOGh4dFXFwcHeMWGDx6GcRJ/m3btlE5QFa+D9q8eTPVYYgFenucAQz2uDjOw3BqaiqV0cEyukFI7jc1NakytJxBuMmTt5L09w6AlTeotraW6vALnz17VhQXF6v22DRk9Dw0Moao08vMYoOmpqbUWQQtZRDuTeL0LuT2Wb+AlTdoYmKCbp/jNixcPnofgBSIWzt0xEjBMosNAvrluZRBuurr64OdzQdn0IYNG0huN0YB7EzwyAXl5uaqv9HQwQ1W69evV+2w67HY9P7+fvV+PBvHWYSZMmL6pYNEP7fFD4I6vF4IS53ADfpS8KHwgXEn2XLgrMIXh77CNZs5gyIEa5AH1iAPrEEeWIM8sAZ5YA3ygAwKeIn7DfEvDOr3HVtc+BsG/ek7triQCIN+dGT/ydLn/EP/www4hd8c9VDYApAO/Una48MJfO8ox1GzoxFHyC18S0JfXO8oSVrisGrVf4uLUNV9vwk7AAAAAElFTkSuQmCC"
+                      }
+                    },
+                    "FaceTypeDCSBIOSOverlay": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeDCSBIOSOverlay, NonVisuals",
+                      "FaceType": 8,
+                      "BackgroundBitmapPath": "",
+                      "ButtonTextTemplate": "",
+                      "TextFont": "Consolas, 12pt",
+                      "FontColor": "Blue",
+                      "BackgroundColor": "Red",
+                      "UIntDcsBiosValue": 4294967295,
+                      "StringDcsBiosValue": "P?LKASD2!",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dBBAQAgDAAh+9dboJlArwAPCnBmZnkTFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBX7MXHpZCGwSPm20AAAAASUVORK5CYII="
+                      }
+                    },
+                    "ConverterOutputType": 1,
+                    "Comparator1": 0,
+                    "ReferenceValue1": 0.0,
+                    "Comparator2": 10,
+                    "ReferenceValue2": 0.0
+                  },
+                  {
+                    "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals",
+                    "FaceTypeText": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+                      "FaceType": 1,
+                      "ButtonTextTemplate": "TSEL\r\n{dcsbios}",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAGjSURBVHhe7dpRbqswFEXRDI8BMRzmwlQyExdCbk5stmkatY2wj6X1s1/SF25dVJlelpXsEEYTjCYYTTCaYDTJwzinF9Y1TUP+vsswLbVY1ykNz6+5O/4/5jQWrx+m7SvPY97/SR7eGdDhe2BIpx5QabsY2DHhsXMqu6o6oIOvWTj3gGI7zCP/O+hrQEc7qKKvAS3iArb1/YXHpsMFP5KnH9BmXG6v+bpOA7yu2wFJtqO6v0lXDSnmVO4kDyhsb16vLOtdDWj98Hyv8Q66iQ9fXb/4m3Rt/fHgMD688t2uXUDtgzc1IONogtEEowlGE4wmGE0wmmA0wWiC0QSjCUZ8EPih44ZPK4POcWjVzpkbBnE9jyjOcXTksD+OaBxGEDvr9ZPARmAEMSDvIBY37R88Ym4ExkI8FOxu96wwPun23hMw3sXO6XY4K4xv/dVGoyA+nst0ec8plWH/Vxq7BQ8DG1YGD6iA0QSjCUYTjCYYTTCaYDTBaILRBKMJRhOMJhhNMJpgNMFogtEEowlGE4wmGE0wmmA0wWiC0QSjCUYTjHZzSV+myxMBDVG+WQAAAABJRU5ErkJggg=="
+                      }
+                    },
+                    "FaceTypeImage": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeImage, NonVisuals",
+                      "FaceType": 2,
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "ImageFile": "",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "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"
+                      }
+                    },
+                    "FaceTypeDCSBIOSOverlay": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeDCSBIOSOverlay, NonVisuals",
+                      "FaceType": 8,
+                      "BackgroundBitmapPath": "",
+                      "ButtonTextTemplate": "",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "UIntDcsBiosValue": 4294967295,
+                      "StringDcsBiosValue": "P?LKASD2!",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dBBAQAgDAAh+9dboJlArwAPCnBmZnkTFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBX7MXHpZCGwSPm20AAAAASUVORK5CYII="
+                      }
+                    },
+                    "ConverterOutputType": 1,
+                    "Comparator1": 4,
+                    "ReferenceValue1": 0.0,
+                    "Comparator2": 2,
+                    "ReferenceValue2": 6.0
+                  },
+                  {
+                    "$type": "NonVisuals.Panels.StreamDeck.DCSBIOSConverter, NonVisuals",
+                    "FaceTypeText": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+                      "FaceType": 1,
+                      "ButtonTextTemplate": "TSEL\r\nRMT",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAIiSURBVHhe7ZoNjoMgFIR7PA/kcbyLV/EmFHngwOtgm83+KUPyJc0nWJl90Gr3EVsQp1ApAJUCUCkAlQJQKUAr5jV80LawTO24x7RE69q2hKnukzl/jzXMrv+02JnXufW/RCu+EtDpGBLSpQPy2GRIxRSOyulUVTegk3M6rh1QKYd15scJYwV0VkEdxgooUiZg7f3ES9HRRpbk5QMy5ri9tm1bJtJv2IBAU1HDb9JdplBy8pWkgAo2eJ9Z44cKaL94vteoghLl4rvtG79J99oPB0flwSd/7d4Eehd+q4AElwJQKQCVAlApAJUCUCkAlQJQKQCVAlApAJUCeIHHFL6xxxrHjeTZXftxrH/utr3esP4hXryZhHv4hTttf8dfPaO+Z0DuIlEOTRBJb2tY45imwtKB6NPx1+oyOu/1v/Cif9Elo/r5iwW0hHkfVAWx+z0wG9MLYKCApvQDYqmufXnZ62ECwl5T+9w3VY69TsvMyidV040DYs1vxLlv3rhTiDGYJeVj+5EFO0JA9J8T2oDY7/QWkA+2cOmAqosum0+1CRv5o/wIL4+t+o0RUAQZ1V8WfUCvDBMQlk/tPw1o78KO3ymgSJnsUUUlNAVUKLcPecnkgNpl58hr80YBCQeVAlApAJUCUCkAlQJQKQCVAlApAJUCUCkAlQJQKQCVAlApAJUCUCkAlQJQKQCVAlApAJUCUCkAlQJQKQCVAlApAJUi8QhPwfSIXlQopD4AAAAASUVORK5CYII="
+                      }
+                    },
+                    "FaceTypeImage": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeImage, NonVisuals",
+                      "FaceType": 2,
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "ImageFile": "",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "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"
+                      }
+                    },
+                    "FaceTypeDCSBIOSOverlay": {
+                      "$type": "NonVisuals.Panels.StreamDeck.FaceTypeDCSBIOSOverlay, NonVisuals",
+                      "FaceType": 8,
+                      "BackgroundBitmapPath": "",
+                      "ButtonTextTemplate": "",
+                      "TextFont": "Consolas, 15.75pt",
+                      "FontColor": "White",
+                      "BackgroundColor": "Black",
+                      "UIntDcsBiosValue": 4294967295,
+                      "StringDcsBiosValue": "P?LKASD2!",
+                      "StreamDeckButtonName": 0,
+                      "OffsetX": 0,
+                      "OffsetY": 0,
+                      "RawBitmap": {
+                        "$type": "System.Byte[], System.Private.CoreLib",
+                        "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAACcSURBVHhe7dBBAQAgDAAh+9dboJlArwAPCnBmZnkTFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBQVAQFAQFQUFQEBQEBUFBUBAUBAVBX7MXHpZCGwSPm20AAAAASUVORK5CYII="
+                      }
+                    },
+                    "ConverterOutputType": 1,
+                    "Comparator1": 0,
+                    "ReferenceValue1": 6.0,
+                    "Comparator2": 10,
+                    "ReferenceValue2": 0.0
+                  }
+                ]
+              },
+              "TreatStringAsNumber": false,
+              "RawTextFont": "Consolas, 15.75pt",
+              "RawFontColor": "White",
+              "RawBackgroundColor": "Black",
+              "DecoderSourceType": 1,
+              "DecoderOutputType": 1,
+              "LimitDecimalPlaces": false,
+              "NumberFormatInfoFormula": null,
+              "FaceType": 4,
+              "ButtonTextTemplate": "TSEL\r\n{dcsbios}",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "UIntDcsBiosValue": 4294967295,
+              "StringDcsBiosValue": "",
+              "StreamDeckButtonName": 11,
+              "OffsetX": 4,
+              "OffsetY": 2,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAOvgAADr4B6kKxwAAAAYZJREFUeF7t2mFOg0AYBmGPx4E4DnfhKr0J0tLlLTgL1dZEZDZ5/oxtLZ8raVY/xjVoE0YFRgVGBUYFRgVGBUYFxlnbD0+sy9A1q+c23VhX69INzeNj7ra/Rz+0q8c33fTKfbvsvwTj7CcD2nwODOnQA1qbLgZ2TDHvnMquqg5o4zVXjj2gsh36lr8OzjWgrR1Uca4BjcoFTGv/wsumwwW/kocf0KQdb6/LdekaeNxpBxSLHXX6m3RVM5Q5rXeSAyqmJ1+vbNFPNaDrm+d7jTvoprz56nrjJ+naevPgMFY989OuXUDtjf+rAZ0QRgVGBUYFRgVGBUYFRgVGBUYFRgVGBcY3ybFr7bj1ADC+Bv6q6oCKx+FcuqG9H004oNn15DDnReXsxgFVOKAdJxlQDtzXa+940wE5oNc4oB0OaIcD+qJ+v5rXN/656g/A+AIHdDYYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYFRgVGBUYdfMxfAKlpS9mzw5xNgAAAABJRU5ErkJggg=="
+              }
+            },
+            "ActionForPress": {
+              "$type": "NonVisuals.Panels.StreamDeck.ActionTypeDCSBIOS, NonVisuals",
+              "ActionType": 2,
+              "StreamDeckButtonName": 11,
+              "StreamDeckButtonPushRotaryName": 0,
+              "SoundFile": null,
+              "Volume": 0.0,
+              "Delay": 0,
+              "WhenTurnedOn": true,
+              "Description": "DCS-BIOS",
+              "DCSBIOSInputs": {
+                "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS]], System.Private.CoreLib",
+                "$values": [
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 0,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 1,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 1,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 2,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 2,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 3,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 3,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 4,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 4,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 5,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 5,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 6,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 6,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "$type": "DCS_BIOS.Serialized.DCSBIOSInput, DCS-BIOS",
+                    "SelectedDCSBIOSInterface": {
+                      "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                      "Delay": 0,
+                      "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                      "Description": "set position",
+                      "Interface": 1,
+                      "MaxValue": 7,
+                      "SuggestedStep": 0,
+                      "SpecifiedActionArgument": null,
+                      "SpecifiedSetStateArgument": 7,
+                      "SpecifiedVariableStepArgument": 0,
+                      "SpecifiedFixedStepArgument": 0,
+                      "SpecifiedSetStringArgument": null,
+                      "SelectedArgumentValue": null
+                    },
+                    "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                    "Delay": 0,
+                    "ControlDescription": "Transmit Selector Switch",
+                    "DCSBIOSInputInterfaces": {
+                      "$type": "System.Collections.Generic.List`1[[DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS]], System.Private.CoreLib",
+                      "$values": [
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "switch to previous or next state",
+                          "Interface": 0,
+                          "MaxValue": 0,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 0,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        },
+                        {
+                          "$type": "DCS_BIOS.Serialized.DCSBIOSInputInterface, DCS-BIOS",
+                          "Delay": 0,
+                          "ControlId": "PLT_CSC_TRANSMIT_SELECTOR",
+                          "Description": "set position",
+                          "Interface": 1,
+                          "MaxValue": 7,
+                          "SuggestedStep": 0,
+                          "SpecifiedActionArgument": null,
+                          "SpecifiedSetStateArgument": 7,
+                          "SpecifiedVariableStepArgument": 0,
+                          "SpecifiedFixedStepArgument": 0,
+                          "SpecifiedSetStringArgument": null,
+                          "SelectedArgumentValue": null
+                        }
+                      ]
+                    }
+                  }
+                ]
+              },
+              "WhenOnTurnedOn": true,
+              "IsSequenced": true
+            },
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 2,
+            "FaceType": 4
+          },
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckButton, NonVisuals",
+            "StreamDeckButtonName": 5,
+            "Face": {
+              "$type": "NonVisuals.Panels.StreamDeck.FaceTypeText, NonVisuals",
+              "FaceType": 1,
+              "ButtonTextTemplate": "EMRG",
+              "TextFont": "Consolas, 15.75pt",
+              "FontColor": "White",
+              "BackgroundColor": "Black",
+              "StreamDeckButtonName": 5,
+              "OffsetX": 4,
+              "OffsetY": 4,
+              "RawBitmap": {
+                "$type": "System.Byte[], System.Private.CoreLib",
+                "$value": "iVBORw0KGgoAAAANSUhEUgAAAEgAAABICAYAAABV7bNHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAH6SURBVHhe7dYLjoMgAIRhj+eBPI538SrehEWQDtC/rukjfWRIvmQzPipTsDvEEewQhiYYmmBogqEJhiYYmmBogqEJhiYYNsZ5DbfHGuYRzl3nMFb32ExLPtQem0KJ+7FM7fU9eq51HvHcB2DYuKugLm+KOFnQNnDC4xzvfns8uSQMG2XS/32jm7RK1iUs8ZLmQdOBmKfjUFC34lT0EqYqbwvtj+XrvqCgOUzbNdWkt3x78LzN6olxQcMwhvyx57fwi2DYuKegMW2DMrmthPz3YwVxaS+GYUPLnUY92X0CabL577Tc8/JJBZwtKJ/X52V7wfXVeNsW4wEFLZOuixOc4wzKQ+d7HU9Qoz4vKi9nLE3jg99BbUH6tdGWyPeqtwgXhJPEgir7svvggvbJloKaLZfPuVnQ1TlxXO7TndtcX/m+gq6dKUgv4+vPvLyb6DN+p6D6XlRQVJro8/qfxP5z3l0Qj2o1lId/RkFR6aj/Yo6f5wsKOnzAfdZnCtJq6X7NEm3DZhx8OXfC0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0ARDEwxNMDTB0JIh/AEqrz8bwvo43AAAAABJRU5ErkJggg=="
+              }
+            },
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": true,
+            "ActionType": 0,
+            "FaceType": 1
+          }
+        ]
+      },
+      "StreamDeckPushRotaries": {
+        "$type": "System.Collections.Generic.List`1[[NonVisuals.Panels.StreamDeck.StreamDeckPushRotary, NonVisuals]], System.Private.CoreLib",
+        "$values": [
+          {
+            "$type": "NonVisuals.Panels.StreamDeck.StreamDeckPushRotary, NonVisuals",
+            "StreamDeckPushRotaryName": 0,
+            "ActionForPress": null,
+            "ActionForRelease": null,
+            "HasConfig": false,
+            "ActionType": 0
+          }
+        ]
+      }
+    }
+  ]
+}
+EndPanelJSON
+
+
+
+
+
+#--------------------------------------------------------------------
+#Below are all the Virtual Keycodes in use listed. You can manually edit this file using these codes.
+#	LBUTTON
+#	RBUTTON
+#	CANCEL
+#	MBUTTON
+#	XBUTTON1
+#	XBUTTON2
+#	BACK
+#	TAB
+#	CLEAR
+#	RETURN
+#	SHIFT
+#	CONTROL
+#	MENU
+#	PAUSE
+#	CAPITAL
+#	KANA
+#	HANGEUL
+#	HANGUL
+#	JUNJA
+#	FINAL
+#	HANJA
+#	KANJI
+#	ESCAPE
+#	CONVERT
+#	NONCONVERT
+#	ACCEPT
+#	MODECHANGE
+#	SPACE
+#	PRIOR
+#	NEXT
+#	END
+#	HOME
+#	LEFT
+#	UP
+#	RIGHT
+#	DOWN
+#	SELECT
+#	PRINT
+#	EXECUTE
+#	SNAPSHOT
+#	INSERT
+#	DELETE
+#	HELP
+#	VK_0
+#	VK_1
+#	VK_2
+#	VK_3
+#	VK_4
+#	VK_5
+#	VK_6
+#	VK_7
+#	VK_8
+#	VK_9
+#	VK_A
+#	VK_B
+#	VK_C
+#	VK_D
+#	VK_E
+#	VK_F
+#	VK_G
+#	VK_H
+#	VK_I
+#	VK_J
+#	VK_K
+#	VK_L
+#	VK_M
+#	VK_N
+#	VK_O
+#	VK_P
+#	VK_Q
+#	VK_R
+#	VK_S
+#	VK_T
+#	VK_U
+#	VK_V
+#	VK_W
+#	VK_X
+#	VK_Y
+#	VK_Z
+#	LWIN
+#	RWIN
+#	APPS
+#	SLEEP
+#	NUMPAD0
+#	NUMPAD1
+#	NUMPAD2
+#	NUMPAD3
+#	NUMPAD4
+#	NUMPAD5
+#	NUMPAD6
+#	NUMPAD7
+#	NUMPAD8
+#	NUMPAD9
+#	MULTIPLY
+#	ADD
+#	SEPARATOR
+#	SUBTRACT
+#	DECIMAL
+#	DIVIDE
+#	F1
+#	F2
+#	F3
+#	F4
+#	F5
+#	F6
+#	F7
+#	F8
+#	F9
+#	F10
+#	F11
+#	F12
+#	F13
+#	F14
+#	F15
+#	F16
+#	F17
+#	F18
+#	F19
+#	F20
+#	F21
+#	F22
+#	F23
+#	F24
+#	NUMLOCK
+#	SCROLL
+#	LSHIFT
+#	RSHIFT
+#	LCONTROL
+#	RCONTROL
+#	LMENU
+#	RMENU
+#	BROWSER_BACK
+#	BROWSER_FORWARD
+#	BROWSER_REFRESH
+#	BROWSER_STOP
+#	BROWSER_SEARCH
+#	BROWSER_FAVORITES
+#	BROWSER_HOME
+#	VOLUME_MUTE
+#	VOLUME_DOWN
+#	VOLUME_UP
+#	MEDIA_NEXT_TRACK
+#	MEDIA_PREV_TRACK
+#	MEDIA_STOP
+#	MEDIA_PLAY_PAUSE
+#	LAUNCH_MAIL
+#	LAUNCH_MEDIA_SELECT
+#	LAUNCH_APP1
+#	LAUNCH_APP2
+#	OEM_1
+#	OEM_PLUS
+#	OEM_COMMA
+#	OEM_MINUS
+#	OEM_PERIOD
+#	OEM_2
+#	OEM_3
+#	OEM_4
+#	OEM_5
+#	OEM_6
+#	OEM_7
+#	OEM_8
+#	OEM_102
+#	PROCESSKEY
+#	PACKET
+#	ATTN
+#	CRSEL
+#	EXSEL
+#	EREOF
+#	PLAY
+#	ZOOM
+#	NONAME
+#	PA1
+#	OEM_CLEAR
+#	VK_NULL
+
